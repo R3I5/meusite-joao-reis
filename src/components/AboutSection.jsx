@@ -2,33 +2,29 @@ import { Briefcase, Code, User } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
+    <section id="about" className="min-h-screen flex flex-col justify-center py-24 px-4 relative snap-start">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Sobre <span className="text-primary">mim</span>
+          About <span className="text-primary">me</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2 font-semibold">
-              Estudante de engenharia de software, buscando uma oportunidade para crescer
+              Software Engineering student seeking an opportunity to grow and gain real-world experience.
             </h3>
 
             <p className="text-muted-foreground">
-              Graduated in Business Administration, with experience in
-              administration and marketing, currently transitioning to the tech
-              field. I’m studying Systems Analysis and Development at Senac
-              while working on hands-on development projects.
+              I am a Software Engineering student with a strong interest in building practical and well-structured solutions. 
+              I am currently focused on developing my programming skills through hands-on projects and continuous learning.
             </p>
 
             <p>
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              I enjoy solving problems, understanding how systems work, and turning ideas into functional applications.
+              As I grow in the field, I am constantly exploring new technologies and improving my foundations to become a better developer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
-                Get in Touch
+              <a href="#skills" className="cosmic-button">
+                What i've been learning
               </a>
               <a
                 href="/renatarsilva_cv_english.pdf"

@@ -28,7 +28,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+    <section id="contact" className="min-h-screen flex flex-col justify-center py-24 px-4 relative snap-start">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get in <span className="text-primary">Touch</span>
@@ -50,7 +50,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Linkedin</h4>
                   <a
-                    href="https://www.linkedin.com/in/renatarsilvadotcom/"
+                    href="https://www.linkedin.com/in/joaovictordosreis/"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     Chat me here
@@ -65,7 +65,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Brazil
+                    Curitiba, Brazil
                   </a>
                 </div>
               </div>

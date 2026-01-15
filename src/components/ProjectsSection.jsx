@@ -60,7 +60,7 @@ const projects = [
 ];
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="min-h-screen flex flex-col justify-center py-24 px-4 relative snap-start">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
@@ -122,7 +122,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/renatarsilva"
+            href="https://github.com/R3I5"
           >
             Check My GitHub <ArrowRight size={16} />
           </a>

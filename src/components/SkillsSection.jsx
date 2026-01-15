@@ -6,25 +6,19 @@ const skills = [
   { name: "HTML/CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
   { name: "React", category: "frontend" },
-  { name: "TypeScript", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
-  { name: "Next.js", category: "frontend" },
-  { name: "Swift", category: "frontend" },
 
   // Backend
   { name: "Java", category: "backend" },
   { name: "Python", category: "backend" },
   { name: "Node.js", category: "backend" },
-  { name: "MongoDB", category: "backend" },
-  { name: "MariaDB", category: "backend" },
+  { name: "MySql", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", category: "tools" },
-  { name: "Docker", category: "tools" },
-  { name: "Figma", category: "tools" },
+  { name: "Git", category: "tools" },
+  { name: "Github", category: "tools" },
   { name: "VSCode", category: "tools" },
   { name: "IntelliJ", category: "tools" },
-  { name: "XCode", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -35,7 +29,7 @@ export const SkillsSection = () => {
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/300">
+    <section id="skills" className="min-h-screen flex flex-col justify-center py-24 px-4 relative snap-start">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary">Skills</span>
@@ -67,10 +61,6 @@ export const SkillsSection = () => {
                 <h1 className="font-semibold text-xl">{skill.name}</h1>
               </div>{" "}
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                {/* <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: 100 + "%" }}
-                /> */}
               </div>
               <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
@@ -79,6 +69,11 @@ export const SkillsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+              <a href="#projects" className="cosmic-button">
+                Putting in practice
+              </a>
         </div>
       </div>
     </section>
