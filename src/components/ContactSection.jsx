@@ -2,6 +2,7 @@ import { Linkedin, Mail, MapPin, Send } from "lucide-react";
 import cn from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useRef, useState } from "react";
+import { Footer } from "./Footer";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -28,8 +29,8 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center py-24 px-4 relative snap-start">
-      <div className="container mx-auto max-w-5xl">
+    <section id="contact" className="min-h-screen flex flex-col justify-between pt-24 px-4 relative snap-start">
+      <div className="container mx-auto max-w-5xl grow flex flex-col justify-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get in <span className="text-primary">Touch</span>
         </h2>
@@ -127,6 +128,7 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
