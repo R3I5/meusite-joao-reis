@@ -64,27 +64,43 @@
 
 @layer base {
   :root {
+    /* MODO CLARO (Tech Modern Light) */
+    /* Fundo: Slate-50 (Branco Gelo) */
     --background: 210 40% 98%;
+    
+    /* Texto: Slate-900 (Preto Suave) */
     --foreground: 222 47% 11%;
 
+    /* Cartão: Branco Puro */
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    /* Cor Principal: Blue-500 (Azul Elétrico Profissional) */
+    --primary: 217 91% 60%;
+    /* Texto no botão: Branco */
     --primary-foreground: 210 40% 98%;
 
+    /* Bordas: Slate-200 (Cinza sutil) */
     --border: 214 32% 91%;
   }
 
   .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
+    /* MODO ESCURO (Tech Modern Dark) */
+    /* Fundo: Slate-950 (Azul Noturno Profundo) */
+    --background: 222 47% 11%;
+    
+    /* Texto: Slate-50 (Branco Gelo) */
+    --foreground: 210 40% 98%;
 
-    --card: 222 47% 8%;
+    /* Cartão: Slate-900 (Um tom acima do fundo) */
+    --card: 215 28% 17%;
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    /* Cor Principal: Blue-500 (Mantém o Azul Elétrico vibrante) */
+    --primary: 217 91% 60%;
+    /* Texto no botão: Branco */
+    --primary-foreground: 210 40% 98%;
 
-    --border: 217 33% 20%;
+    /* Bordas: Slate-800 (Escuro discreto) */
+    --border: 215 28% 17%;
   }
 }
 
@@ -94,7 +110,7 @@
 
 html {
   @apply scroll-smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /* Efeito magnético */
 }
 
 body {
@@ -125,7 +141,8 @@ padding-inline: 2rem;
 
 @utility text-glow {
 @apply relative;
-text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+/* Atualizado para brilho AZUL */
+text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
 @utility card-hover {
@@ -140,8 +157,9 @@ border: 1px solid transparent;
 }
 
 @utility cosmic-button {
+/* Atualizado sombra para AZUL */
 @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-        transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+        transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]
         hover:scale-105 active:scale-95;
 }
 

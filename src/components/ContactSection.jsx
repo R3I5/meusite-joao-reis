@@ -29,7 +29,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-between pt-24 px-4 relative snap-start">
+    <section id="contact" className="min-h-screen flex flex-col justify-between pt-13 px-4 relative snap-start">
       <div className="container mx-auto max-w-5xl grow flex flex-col justify-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get in <span className="text-primary">Touch</span>
@@ -79,7 +79,7 @@ export const ContactSection = () => {
             <form
               ref={formRef}
               target="_blank"
-              action="https://formsubmit.co/renata.rodriguesdasilva@outlook.com"
+              action="https://formsubmit.co/j.victor.reis20044@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-2"
