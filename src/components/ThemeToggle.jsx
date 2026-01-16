@@ -1,45 +1,33 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export const ThemeToggle = () => {
-  const [isDarkMode, SetisDarkMode] = useState(false);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      SetisDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      localStorage.setItem("theme", "dark");
-      SetisDarkMode(false);
-    }
-  });
+    const root = window.document.documentElement;
+    root.classList.remove("light", "dark");
+    root.classList.add(theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      SetisDarkMode(false);
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      SetisDarkMode(true);
-    }
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-3 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "p-2 rounded-full hover:bg-primary/10 transition-colors duration-300 focus:outline-none cursor-pointer"
       )}
+      aria-label="Toggle Theme"
     >
-      {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
+      {theme === "dark" ? (
+        <Sun className="h-6 w-6 text-primary transition-all" />
       ) : (
-        <Moon className="h-6 w-6 text-blue-900" />
+        <Moon className="h-6 w-6 text-primary transition-all" />
       )}
     </button>
   );
