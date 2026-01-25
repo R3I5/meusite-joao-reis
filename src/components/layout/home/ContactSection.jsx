@@ -1,8 +1,8 @@
 import { Linkedin, Mail, MapPin, Send } from "lucide-react";
-import cn from "../lib/utils";
-import { useToast } from "../hooks/use-toast";
+import cn from "../../../lib/utils";
+import { useToast } from "../../../hooks/use-toast";
 import { useRef, useState } from "react";
-import { Footer } from "./Footer";
+import { Footer } from "../../Footer";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -53,6 +53,8 @@ export const ContactSection = () => {
                   <a
                     href="https://www.linkedin.com/in/joaovictordosreis/"
                     className="text-muted-foreground hover:text-primary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Chat me here
                   </a>

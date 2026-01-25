@@ -1,9 +1,9 @@
 import { Navbar } from "../components/Navbar";
-import { HeroSection } from "../components/HeroSection";
-import { AboutSection } from "../components/AboutSection";
-import { SkillsSection } from "../components/SkillsSection";
-import { ProjectsSection } from "../components/ProjectsSection";
-import { ContactSection } from "../components/ContactSection";
+import { HeroSection } from "../components/layout/home/HeroSection";
+import { AboutSection } from "../components/layout/home/AboutSection";
+import { SkillsSection } from "../components/layout/home/SkillsSection";
+import { ProjectsSection } from "../components/layout/home/ProjectsSection";
+import { ContactSection } from "../components/layout/home/ContactSection";
 // Removi o ThemeToggle e o StarBackground (que você pediu para tirar antes)
 
 export const Home = () => {

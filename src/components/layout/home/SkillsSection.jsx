@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../../lib/utils";
 
 const skills = [
   // Frontend
@@ -9,9 +9,9 @@ const skills = [
   { name: "Tailwind CSS", category: "frontend" },
 
   // Backend
-  { name: "Java", category: "backend" },
+  { name: "PHP", category: "backend" },
   { name: "Python", category: "backend" },
-  { name: "Node.js", category: "backend" },
+  { name: "Laravel", category: "backend" },
   { name: "MySql", category: "backend" },
 
   // Tools
