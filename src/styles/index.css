@@ -1,2 +1,61 @@
 @import "tailwindcss";
 
+@theme {
+    /* Definição da sua paleta principal */
+    --color-brand-blue: #21548B;
+    --color-brand-gray-light: #EDEDED;
+    --color-brand-gray-medium: #A5A5A5;
+
+    /* Cores de interface que mudam conforme o tema */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-muted: var(--muted);
+    --color-border: var(--border);
+}
+
+/* Configurações Globais e Variáveis de Tema */
+@layer base {
+    :root {
+        /* Modo Claro */
+        --background: #EDEDED;
+        /* Fundo claro */
+        --foreground: #1a1a1a;
+        /* Texto quase preto */
+        --primary: #21548B;
+        /* Seu azul principal */
+        --muted: #A5A5A5;
+        /* Cinza para textos secundários */
+        --border: #d1d1d1;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        /* Modo Escuro */
+        --background: #0f172a;
+        /* Azul marinho bem escuro para o fundo */
+        --foreground: #EDEDED;
+        /* Texto volta para o cinza claro */
+        --primary: #3b82f6;
+        /* Um azul um pouco mais vibrante para contraste no dark */
+        --muted: #A5A5A5;
+        --border: #1e293b;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground antialiased transition-colors duration-300;
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+}
+
+/* Utilitários extras se precisar */
+@utility container-center {
+    margin-inline: auto;
+    max-width: 1200px;
+    padding-inline: 2rem;
+}
