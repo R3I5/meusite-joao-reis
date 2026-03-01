@@ -1,6 +1,6 @@
 import { Linkedin, Mail, MapPin, Send } from "lucide-react";
-import { cn } from "../../lib/utils";
-import { useToast } from "../../hooks/use-toast";
+import { cn } from "../lib/utils";
+import { useToast } from "../hooks/use-toast";
 import { useRef, useState } from "react";
 import { Footer } from "../components/Footer";
 
