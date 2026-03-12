@@ -1,30 +1,28 @@
-import { ThemeToggle } from "./ThemeToggle";
+import "../styles/components.css"
 
-export const Navbar = () => {
-	return (
-		<header className="py-4 px-4 bg-card border-b border-border">
-			<div className="container mx-auto max-w-5xl flex items-center justify-between">
-				<nav className="flex items-center gap-4">
-					<a href="#hero" className="font-semibold">
-						Home
-					</a>
-					<a href="#about" className="hover:text-primary">
-						About
-					</a>
-					<a href="#skills" className="hover:text-primary">
-						Skills
-					</a>
-					<a href="#projects" className="hover:text-primary">
-						Projects
-					</a>
-					<a href="#contact" className="hover:text-primary">
-						Contact
-					</a>
-				</nav>
-				<div>
-					<ThemeToggle />
-				</div>
-			</div>
-		</header>
-	);
-};
+function Navbar() {
+    return (
+        <header className="navbar">
+
+            <div className="navbar__container">
+
+                <div className="navbar__logo">
+                    João Reis
+                </div>
+
+                <nav className="navbar__menu">
+
+                    <a href="#home" className="nav-link">home</a>
+                    <a href="#projects" className="nav-link">projects</a>
+                    <a href="#blog" className="nav-link">blog</a>
+                    <a href="#contact" className="nav-link">contact</a>
+
+                </nav>
+
+            </div>
+
+        </header>
+    )
+}
+
+export default Navbar

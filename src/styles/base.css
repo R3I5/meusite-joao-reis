@@ -1,0 +1,23 @@
+body {
+
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+
+    background: linear-gradient(180deg,
+            #1B2A41 0%,
+            #0F172A 50%,
+            #020617 100%);
+
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
