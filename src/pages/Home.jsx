@@ -1,5 +1,5 @@
 import { Navbar }  from "../components/Navbar";
-// import { HeroSection } from "../layout/HeroSection";
+import { HeroSection } from "../layout/HeroSection";
 // import { AboutSection } from "../layout/AboutSection";
 // import { SkillsSection } from "../layout/SkillsSection";
 // import { ProjectsSection } from "../layout/ProjectSection";
@@ -9,7 +9,7 @@ export const Home = () => {
     return (
         <>
             <Navbar />
-            
+            <HeroSection />
         </>
     );
 };

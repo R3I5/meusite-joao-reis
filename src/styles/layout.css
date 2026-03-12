@@ -10,3 +10,48 @@
     padding-block: var(--space-xl);
 
 }
+
+.hero {
+    min-height: 100vh;
+
+    background: linear-gradient(180deg,
+            #1a2238 0%,
+            #0f172a 50%,
+            #020617 100%);
+
+    position: relative;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 120px 40px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(60px, 10vw, 120px);
+
+    font-weight: 800;
+
+    line-height: 0.9;
+
+    color: white;
+}
+
+.hero-subtitle {
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    color: #cbd5e1;
+
+    max-width: 400px;
+}
+
