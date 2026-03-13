@@ -1,1 +1,1 @@
-export function HeroSection() {}
+export function ProjectSection() {}
