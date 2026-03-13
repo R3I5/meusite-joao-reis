@@ -1,41 +1,41 @@
 :root {
 
-    /* COLORS */
+    /* CORES — fundo */
+    --color-bg-primary:       #020617;
+    --color-bg-secondary:     #0F172A;
+    --color-bg-surface:       #1B2A41;
 
-    --color-bg-primary: #020617;
-    --color-bg-secondary: #0F172A;
-    --color-bg-surface: #1B2A41;
+    /* Gradiente — usado no body e na hero */
+    --color-bg-gradient-top:  #1B2A41;
+    --color-bg-gradient-mid:  #0F172A;
+    --color-bg-gradient-bot:  #020617;
 
-    --color-text-primary: #E5E7EB;
-    --color-text-secondary: #94A3B8;
+    /* CORES — texto */
+    --color-text-primary:     #E5E7EB;
+    --color-text-secondary:   #94A3B8;
+    --color-text-muted:       #CBD5E1;
 
-    --color-accent: #FF7A18;
+    /* CORES — acento */
+    --color-accent:           #FF7A18;
 
-    /* TYPOGRAPHY */
-
+    /* TIPOGRAFIA */
     --font-heading: "JetBrains Mono", monospace;
-    --font-body: "Inter", sans-serif;
+    --font-body:    "Inter", sans-serif;
 
-    /* SPACING SYSTEM */
-
+    /* ESPAÇAMENTO */
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 16px;
     --space-lg: 32px;
     --space-xl: 64px;
 
-    /* BORDER */
-
+    /* BORDAS */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
 
-    /* TRANSITIONS */
-
-    --transition-fast: 150ms ease;
+    /* TRANSIÇÕES */
+    --transition-fast:   150ms ease;
     --transition-medium: 300ms ease;
-}
 
-.texto-destaque {
-    color: var(--color-accent);
 }

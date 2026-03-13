@@ -1,19 +1,17 @@
 body {
-
     font-family: var(--font-body);
     color: var(--color-text-primary);
 
+    /* Gradiente centralizado aqui — NÃO repete na hero */
     background: linear-gradient(180deg,
-            #1B2A41 0%,
-            #0F172A 50%,
-            #020617 100%);
+        var(--color-bg-gradient-top) 0%,
+        var(--color-bg-gradient-mid) 50%,
+        var(--color-bg-gradient-bot) 100%);
 
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--font-heading);
 }
 

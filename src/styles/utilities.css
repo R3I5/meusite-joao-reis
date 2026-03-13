@@ -1,15 +1,21 @@
-.text-center {
-    text-align: center;
-}
+/* ── DISPLAY ─────────────────────────────────────────────────── */
 
-.flex {
-    display: flex;
-}
+.hidden  { display: none; }
+.flex    { display: flex; }
+.grid    { display: grid; }
 
-.grid {
-    display: grid;
-}
+/* ── ALINHAMENTO ─────────────────────────────────────────────── */
 
-.hidden {
-    display: none;
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.items-center  { align-items: center; }
+.justify-center { justify-content: center; }
+
+/* ── DESTAQUE DE TEXTO ───────────────────────────────────────── */
+
+/* Movido de tokens.css — é uma classe, não um token */
+.texto-destaque {
+    color: var(--color-accent);
 }
