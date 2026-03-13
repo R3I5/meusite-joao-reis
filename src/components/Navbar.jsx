@@ -9,6 +9,7 @@ export function Navbar() {
                 </div>
                 <nav className="navbar__menu">
                     <a href="#home" className="nav-link">home</a>
+                    <a href="#about" className="nav-link">about</a>
                     <a href="#projects" className="nav-link">projects</a>
                     <a href="#blog" className="nav-link">blog</a>
                     <a href="#contact" className="nav-link">contact</a>
