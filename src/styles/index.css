@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        /* Seu gradiente de fundo que estava no base.css continua aqui */
+        background: linear-gradient(180deg, #1B2A41 0%, #0F172A 50%, #020617 100%);
+        color: #E5E7EB;
+    }
+}
