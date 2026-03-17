@@ -7,3 +7,5 @@
         color: #E5E7EB;
     }
 }
+
+html { scroll-behavior: smooth; }
