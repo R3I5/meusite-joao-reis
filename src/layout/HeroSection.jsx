@@ -1,8 +1,10 @@
 import cat from "../assets/cat.png";
+import { HeroLines } from "../components/HeroLines";
 
 export function HeroSection() {
     return (
         <section id="home" className="relative min-h-screen overflow-hidden pt-28 scroll-mt-20">
+            <HeroLines />
             <div className="mx-auto grid min-h-screen w-[90%] max-w-300 grid-cols-12 grid-rows-[auto_1fr]">
                 <div className="col-span-7 self-center">
                     <h1 className="font-heading text-[clamp(4rem,10vw,7rem)] leading-[0.9] tracking-tight text-white">
