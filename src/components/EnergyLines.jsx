@@ -1,60 +1,42 @@
-export function HeroLines() {
+export function EnergyLines() {
     return (
-        <div className="pointer-events-none absolute inset-0 z-0">
+        <div className="pointer-events-none absolute inset-0 z-1">
             <svg
                 className="absolute inset-0 h-full w-full"
                 viewBox="0 0 1400 900"
                 fill="none"
                 preserveAspectRatio="none"
             >
-                {/* Linha superior */}
+                {/* LINHA SUPERIOR - energia */}
                 <path
                     d="M0 50 L435 50 L580 150 L1400 150"
-                    stroke="#4218FF"
-                    strokeOpacity="0.18"
-                    strokeWidth="8"
-                    fill="none"
+                    className="energy-pulse"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />
-
-                {/* Linha do REIS */}
                 <path
                     d="M415 310 L725 310 L865 200 L1400 200"
-                    stroke="#4218FF"
-                    strokeOpacity="0.18"
-                    strokeWidth="8"
-                    fill="none"
+                    className="energy-pulse"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />
-
-                {/* Linha inferior esquerda */}
                 <path
                     d="M0 580 L325 580 L405 520 L550 520"
-                    stroke="#4218FF"
-                    strokeOpacity="0.18"
-                    strokeWidth="8"
-                    fill="none"
+                    className="energy-pulse"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />
-
                 {/* Linha direita (blog) */}
                 <path
                     d="M930 465 L1400 465"
-                    stroke="#4218FF"
-                    strokeOpacity="0.18"
-                    strokeWidth="8"
-                    fill="none"
+                    className="energy-pulse"
                     strokeLinecap="round"
+                    strokeLinejoin="round"
                 />
+                {/* Linha grande */}
                 <path
                     d="M0 650 L720 650 L800 600 L1400 600"
-                    stroke="#4218FF"
-                    strokeOpacity="0.18"
-                    strokeWidth="8"
-                    fill="none"
+                    className="energy-pulse"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />

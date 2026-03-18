@@ -8,4 +8,46 @@
     }
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
+
+.energy-pulse {
+    stroke: rgba(235, 245, 255, 0.95);
+    stroke-width: 4;
+    fill: none;
+
+    stroke-dasharray: 26 2000;
+    stroke-dashoffset: 0;
+
+    opacity: 0;
+
+    filter: drop-shadow(0 0 4px rgba(220, 235, 255, 0.35));
+
+    animation: energyPulse 7s ease-in-out infinite;
+}
+
+@keyframes energyPulse {
+    0% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.9;
+    }
+
+    20% {
+        stroke-dashoffset: -420px;
+        opacity: 0.95;
+    }
+
+    28% {
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -420px;
+        opacity: 0;
+    }
+}
