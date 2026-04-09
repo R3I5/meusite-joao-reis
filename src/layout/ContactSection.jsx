@@ -23,14 +23,14 @@ export function ContactSection() {
                             <a href="mailto:j.victor.reis20044@gmail.com" target="_blank" className="pcb-panel p-5 transition hover:border-cyan-200/20">
                                 <span className="pcb-label">EMAIL</span>
                                 <p className="mt-4 text-sm text-slate-200">
-                                    Substitua aqui pelo seu e-mail
+                                    j.victor.reis20044@gmail.com
                                 </p>
                             </a>
 
                             <a href="https://github.com/R3I5" target="_blank" className="pcb-panel p-5 transition hover:border-cyan-200/20">
                                 <span className="pcb-label">GITHUB</span>
                                 <p className="mt-4 text-sm text-slate-200">
-                                    https://github.com/R3I5/R3I5
+                                    https://github.com/R3I5
                                 </p>
                             </a>
 

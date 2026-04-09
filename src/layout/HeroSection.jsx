@@ -17,7 +17,7 @@ export function HeroSection() {
             <HeroLines />
             <EnergyLines />
 
-            <div className="relative z-10 mx-auto w-[92%] max-w-350 py-10 md:py-16 lg:py-20">
+            <div className="relative z-10 mx-auto w-[92%] max-w-350 pb-10 pt-4 md:pb-16 md:pt-8 lg:pb-20 lg:pt-10">
                 <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
                     <div className="pcb-panel pcb-grid-bg p-6 md:p-8 lg:p-10">
                         <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
@@ -38,20 +38,20 @@ export function HeroSection() {
                         <div className="pcb-divider my-6" />
 
                         <p className="max-w-190 text-base leading-8 text-slate-300 md:text-lg">
-                            Software Engineering student focused on robust back-end systems
-                            with <span className="text-cyan-100">Java</span>, while exploring
-                            logic, performance and machine-level precision through{" "}
-                            <span className="text-cyan-100">C++</span> and{" "}
-                            <span className="text-cyan-100">Embedded Systems</span>.
+                            Engenheiro de Software em formação, focado em sistemas back-end robusto
+                            com <span className="text-cyan-100">Java</span>, e performance
+                            de baixo nível com {" "}
+                            <span className="text-cyan-100">C++</span> e{" "}
+                            <span className="text-cyan-100">Sistemas Embarcados</span>.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-3">
                             <a href="#projects" className="pcb-button">
-                                View Projects
+                                Ver Projetos
                             </a>
 
                             <a href="#contact" className="pcb-button pcb-button--ghost">
-                                Contact Channel
+                                Entre em contato
                             </a>
                         </div>
 
